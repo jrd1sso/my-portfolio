@@ -1,0 +1,143 @@
+@import "_base";
+
+/* Go up button
+****************/
+button.go-up {
+  border-radius: 50%;
+  padding: 0.5rem 0.65rem;
+  position: fixed;
+  z-index: 9;
+  right: 15px;
+  bottom: 20px;
+  border: 1px solid $lightgray;
+  background-color: $lightgray;
+  font-weight: bold;
+}
+
+/*__________________________ Pages __________________________*/
+/* Profile
+***********/
+#profile {
+  .intro {
+    text-align: center;
+    margin-bottom: 0.8rem;
+    @include make-box-shadow;
+
+    .card-body {
+      padding: 0 0 1.1rem;
+    }
+
+    .cover-photo {
+      background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+        url("../assets/cover.jpg") no-repeat center center $darkgray;
+      background-size: cover;
+      width: 100%;
+      height: 250px;
+      h5 {
+        padding-top: 100px;
+      }
+    }
+
+    .profile-picture {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-top: -90px;
+      padding: 2px;
+      background-color: #fff;
+      border: 1px solid #fff;
+    }
+
+    h3 {
+      margin-top: 0.5rem;
+      position: relative;
+      font-size: 160%;
+    }
+
+    .my-craft {
+      color: $main;
+      margin-top: 0.25rem;
+    }
+
+    .email {
+      color: $gray;
+      margin-bottom: 0.4rem;
+    }
+
+    .tags {
+      color: $gray;
+      font-size: 80%;
+
+      li {
+        display: inline-block;
+        padding: 0.1rem 0.5rem 0.2rem;
+        margin-right: 0.25rem;
+        border-radius: 0.25rem;
+        margin-top: 0.25rem;
+        border: 1px solid $lightgray;
+        @include make-transition($on: color);
+
+        &:hover {
+          color: $font;
+        }
+
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  .about-me {
+    @include make-box-shadow;
+
+    h5 {
+      font-size: 120%;
+    }
+
+    .bio {
+      font-size: 95%;
+      color: $darkgray;
+      p {
+        margin-top: 0.25rem;
+      }
+    }
+
+    .links {
+      font-size: 90%;
+      margin: 0.5rem -0.1rem 0;
+
+      li {
+        display: inline;
+        margin-right: 0.75rem;
+        &:last-of-type {
+          margin-right: 0;
+        }
+      }
+
+      a {
+        color: $gray;
+        @include make-transition($on: color);
+        &:hover {
+          // color: $darkgray;
+          color: $main;
+        }
+      }
+    }
+  }
+
+  hr {
+    margin: 0.85rem 0;
+  }
+
+  .worksTitle {
+    font-size: 120%;
+    margin-bottom: 0.85rem;
+  }
+
+  .post-card {
+    @extend %post-card;
+  }
+}
+
+@import "_responsive";
