@@ -85,41 +85,34 @@
   },
   {
     "id": 12,
-    "alt": "active box",
-    "url": "https://jrd1sso.github.io/rDesign6/",
-    "date": "Jan, 18",
-    "tags": ["Lightboxjs"]
-  },
-  {
-    "id": 13,
     "alt": "scoot",
     "url": "https://jrd1sso.github.io/comingSoon/",
     "date": "Dec, 17",
     "tags": ["Countdown", "Particlesjs"]
   },
   {
-    "id": 14,
-    "alt": "schoola",
-    "url": "https://jrd1sso.github.io/Schoola/",
-    "date": "2019",
-    "tags": ["Bootstrap"]
+    "id": 13,
+    "alt": "active box",
+    "url": "https://jrd1sso.github.io/rDesign6/",
+    "date": "Jan, 18",
+    "tags": ["Lightboxjs"]
   },
   {
-    "id": 15,
+    "id": 14,
     "alt": "schoola guide",
     "url": "https://jrd1sso.github.io/schoolaGuide/",
     "date": "2019",
     "tags": ["Bootstrap"]
   },
   {
-    "id": 16,
+    "id": 15,
     "alt": "mint",
     "url": "https://mint-vue.web.app/",
     "date": "Nov, 20",
-    "tags": ["Vue2", "Tailwindcss", "Purgecss", "Masonry"]
+    "tags": ["Vue2", "Tailwind", "Purgecss", "Masonry"]
   },
   {
-    "id": 17,
+    "id": 16,
     "alt": "pet appointment",
     "url": "https://pet-apt.web.app/",
     "date": "Nov, 20",

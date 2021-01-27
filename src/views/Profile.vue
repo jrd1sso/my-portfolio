@@ -32,6 +32,14 @@
           <h5>About Me</h5>
 
           <div class="bio">
+            <p>
+              Hi there!!
+              <img
+                class="profile-picture"
+                src="../assets/waving.png"
+                alt="Greetings"
+              />
+            </p>
             <p v-for="(line, i) in bio" :key="i">{{ line }}</p>
           </div>
 
@@ -51,7 +59,7 @@
 
         <hr class="bg-light" />
 
-        <h5 class="worksTitle text-center">Some of my works</h5>
+        <h5 class="worksTitle text-center">My Works</h5>
         <div id="posts-container" v-if="myPosts.length">
           <PostProfile v-for="post in myPosts" :key="post.id" :post="post" />
         </div>
@@ -72,10 +80,9 @@ export default {
       craft: "Front-end developer",
       craftDesc: "<I make clean websites />",
       bio: [
-        "Hi there!! 👋🏾",
         "I'm a Nubian guy who lives in Alexandria and graduated from its faculty of Science, CS department.",
         "I've worked before as a call center representative and in sales (at: We GSM, ElMaqam Restaurant, Shick, Solo for Men Clothes, MG for Bags & Shoes), and some freelance work in design.",
-        "And I've participated in many student activities that helped me improve my public speaking, team working, media, and soft skills in general (such as: Resala, Daleel Science, Inception Project, Hashtag English Project, CAC, Hult Prize, ...).",
+        "And I've participated in many student activities that helped me improve my public speaking, team working, media, and soft skills in general (such as: Resala, Daleel Science, Inception Project, Hashtag English Project, CAC, TIEC, InnovEgype, Hult Prize, Innovation Day7, ...).",
         "My most liked website design is the modern, clean ones; it feels so relaxing for the eyes, safe, and without exaggerating it feels home!"
       ],
       skills: [
@@ -91,7 +98,7 @@ export default {
         "Tailwind",
         "Adobe premiere",
         "Photoshop essentials",
-        "a bit of After effects & Illustrator",
+        "a bit of adobe Ae, Au, Ai, & Lr",
         "B2 in English"
       ],
       websites: [
